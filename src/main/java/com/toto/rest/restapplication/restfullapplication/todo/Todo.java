@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.restfulwebservices.todo;
+package com.toto.rest.restapplication.restfullapplication.todo;
 
 import java.time.LocalDate;
 

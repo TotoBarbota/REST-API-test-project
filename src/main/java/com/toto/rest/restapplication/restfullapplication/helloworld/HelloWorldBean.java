@@ -1,4 +1,6 @@
-package com.in28minutes.rest.webservices.restfulwebservices.helloworld;
+package com.toto.rest.restapplication.restfullapplication.helloworld;
+
+import org.springframework.context.annotation.Bean;
 
 public class HelloWorldBean {
 
