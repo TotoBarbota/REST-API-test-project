@@ -2,11 +2,12 @@ package com.toto.rest.restapplication.restfullapplication.todo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class TodoService {
 	
 	private static List<Todo> todos = new ArrayList<>();
@@ -14,11 +15,11 @@ public class TodoService {
 	private static int todosCount = 0;
 	
 	static {
-		todos.add(new Todo(++todosCount, "in28minutes","Get AWS Certified", 
+		todos.add(new Todo(++todosCount, "Tini","Get AWS Certified",
 							LocalDate.now().plusYears(10), false ));
-		todos.add(new Todo(++todosCount, "in28minutes","Learn DevOps", 
+		todos.add(new Todo(++todosCount, "Tini","Learn DevOps",
 				LocalDate.now().plusYears(11), false ));
-		todos.add(new Todo(++todosCount, "in28minutes","Learn Full Stack Development", 
+		todos.add(new Todo(++todosCount, "Toto","Learn Full Stack Development",
 				LocalDate.now().plusYears(12), false ));
 	}
 	
@@ -45,8 +46,8 @@ public class TodoService {
 		return todo;
 	}
 
-	public void updateTodo(Todo todo) {
-		deleteById(todo.getId());
-		todos.add(todo);
-	}
+//	public void updateTodo(Optional<Todo> todo) {
+//		deleteById(todo.getId());
+//		todos.add(todo);
+//	}
 }
